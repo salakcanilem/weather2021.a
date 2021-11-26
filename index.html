@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Antique+Soft&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/src/styles.css" />
+
+    <title>What's the Weather?</title>
+  </head>
+
+  <body>
+    <div id="search-bar-all">
+      <div id="search-bar">
+        <form class="search-form" id="search-form">
+          <input type="search" placeholder="Enter City" id="city-input" />
+          <input type="submit" value="Search" class="form-control btn" />
+        </form>
+      </div>
+    </div>
+    <br />
+
+    <div id="current-weather-container">
+      <div id="current-location">
+        <h1 id="city"></h1>
+
+        <div id="date-time">
+          <h2>November 1, 2021</h2>
+        </div>
+
+        <div id="weather-main">
+          <div id="temp">"temp"</div>
+          <div id="humidity">"humidity"</div>
+        </div>
+      </div>
+      <br />
+      <br />
+
+      <div id="forecast">
+        <div class="row">
+          <div class="col = 5">
+            <div class="card">
+              <div class="cardBodyForecast">
+                <h5 class="cardTitle">Monday</h5>
+                <p class="cardText">73°/51°</p>
+                <p class="cardTextPecip">4%</p>
+              </div>
+            </div>
+          </div>
+          <div class="col = 5">
+            <div class="card">
+              <div class="cardBodyForecast">
+                <h5 class="cardTitle">Tuesday</h5>
+                <p class="cardText">72°/50°</p>
+                <p class="cardTextPecip">4%</p>
+              </div>
+            </div>
+          </div>
+          <div class="col = 5">
+            <div class="card">
+              <div class="cardBodyForecast">
+                <h5 class="cardTitle">Wednesday</h5>
+                <p class="cardText">69°/51°</p>
+                <p class="cardTextPecip">4%</p>
+              </div>
+            </div>
+          </div>
+          <div class="col = 5">
+            <div class="card">
+              <div class="cardBodyForecast">
+                <h5 class="cardTitle">Thursday</h5>
+                <p class="cardText">73°/51°</p>
+                <p class="cardTextPecip">4%</p>
+              </div>
+            </div>
+          </div>
+          <div class="col = 5">
+            <div class="card">
+              <div class="cardBodyForecast">
+                <h5 class="cardTitle">Friday</h5>
+                <p class="cardText">73°/51°</p>
+                <p class="cardTextPecip">4%</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>

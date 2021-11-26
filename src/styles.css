@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+
+  background-image: url(/src/images/background.jpg);
+  background-size: cover;
+}
+
+#current-weather-container {
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px black;
+  padding: 30px;
+  border-radius: 10px;
+}
+h1 {
+  text-shadow: 1px 1px 1px black;
+}
+#search-bar {
+  font-size: 20px;
+  padding: 30px;
+}
+
+input {
+  border-radius: 80px;
+  width: 300px;
+  padding: 10px;
+  background-color: wheat;
+  border-color: black;
+  border-width: 2px;
+  color: black;
+  font-weight: 800;
+}
+
+#current-location btn {
+  border-radius: 80px;
+  padding: 10px;
+  background-color: #a64d43;
+  color: white;
+  font-weight: 800;
+
+  border-width: 2px;
+  border-color: black;
+  width: 100px;
+}
+
+.form-control {
+  border-radius: 80px;
+  padding: 10px;
+  background-color: #2596be;
+  color: white;
+  font-weight: 800;
+
+  border-width: 2px;
+  border-color: black;
+  width: 100px;
+}
+a:hover {
+  color: orangered;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#weather-main {
+  font-size: 18px;
+  font-weight: 300;
+}
+#forecast {
+  color: #2596be;
+  font-weight: 500;
+  text-align: center;
+}
