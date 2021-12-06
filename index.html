@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,9 +22,12 @@
     <link rel="stylesheet" href="/src/styles.css" />
 
     <title>What's the Weather?</title>
+    <!--USE ME USE ME -->
   </head>
 
   <body>
+
+
     <div id="search-bar-all">
       <div id="search-bar">
         <form class="search-form" id="search-form">
@@ -43,13 +47,20 @@
         </div>
 
         <div id="weather-main">
-          <div id="temp"></div>
-          <div id="humidity"></div>
+          <div id="current">Current Conditions:</div>
+
+          <div id="temp">Temp</div>
+          <div id="humidity">Humidity</div>
+          <div id="windSpeed">Wind</div>
+          <div id ="icon" >Icon </div>
+    
+        </div>
         </div>
       </div>
-      <br />
-      <br />
-
+    </div>
+    <br />
+    <br />
+    <div id="future-weather-container">
       <div id="forecast">
         <div class="row">
           <div class="col = 5">
@@ -58,6 +69,7 @@
                 <h5 class="cardTitle">Monday</h5>
                 <p class="cardText">73°/51°</p>
                 <p class="cardTextPecip">4%</p>
+                <p class="cardIcon">Icon</p>
               </div>
             </div>
           </div>
@@ -67,6 +79,7 @@
                 <h5 class="cardTitle">Tuesday</h5>
                 <p class="cardText">72°/50°</p>
                 <p class="cardTextPecip">4%</p>
+                <p class="cardIcon">Icon</p>
               </div>
             </div>
           </div>
@@ -76,6 +89,7 @@
                 <h5 class="cardTitle">Wednesday</h5>
                 <p class="cardText">69°/51°</p>
                 <p class="cardTextPecip">4%</p>
+                <p class="cardIcon">Icon</p>
               </div>
             </div>
           </div>
@@ -85,6 +99,7 @@
                 <h5 class="cardTitle">Thursday</h5>
                 <p class="cardText">73°/51°</p>
                 <p class="cardTextPecip">4%</p>
+                <p class="cardIcon">Icon</p>
               </div>
             </div>
           </div>
@@ -94,12 +109,16 @@
                 <h5 class="cardTitle">Friday</h5>
                 <p class="cardText">73°/51°</p>
                 <p class="cardTextPecip">4%</p>
+                <p class="cardIcon">Icon</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <br />
+    <br />
+    <small>Open-source code by mcky </small>
 
     <script src="src/script.js"></script>
   </body>

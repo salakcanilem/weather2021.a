@@ -14,7 +14,7 @@ let days = [
   "Wednesday",
   "Thursday",
   "Friday",
-  "Saturday"
+  "Saturday",
 ];
 let day = days[now.getDay()];
 
@@ -30,7 +30,7 @@ let months = [
   "September",
   "October",
   "November",
-  "December"
+  "December",
 ];
 
 let month = months[now.getMonth()];
@@ -44,13 +44,26 @@ function showWeather(response) {
   let city = response.data.name;
   h1.innerHTML = `${city}`;
 
+  let current = document.querySelector("#current");
+  current.innerHTML = response.data.weather[0].description;
+
   let temp = document.querySelector("#temp");
   let temperature = Math.round(response.data.main.temp);
-  temp.innerHTML = `${temperature}°C`;
+  temp.innerHTML = `Temperature:  ${temperature}°C`;
 
   let humid = document.querySelector("#humidity");
   let humidity = Math.round(response.data.main.humidity);
-  humid.innerHTML = `${humidity}%`;
+  humid.innerHTML = `Humidity:  ${humidity}%`;
+
+  let winds = document.querySelector("#windSpeed");
+  let windSpeed = Math.round(response.data.wind.speed);
+  winds.innerHTML = `WindSpeed:  ${humidity}m/h`;
+
+  let icon = document.querySelector("#icon");
+  icon.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
 }
 
 function search(event) {
