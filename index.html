@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,8 +25,6 @@
   </head>
 
   <body>
-
-
     <div id="search-bar-all">
       <div id="search-bar">
         <form class="search-form" id="search-form">
@@ -40,96 +37,64 @@
 
     <div id="current-weather-container">
       <div id="current-location">
-        <h1 id="city"></h1>
-
-        <div id="date-time">
-          <h2>November 1, 2021</h2>
-        </div>
-
         <div id="weather-main">
-          <div id="current">Current Conditions:</div>
-
-          <div id="temp">Temp</div>
-          <div id="humidity">Humidity</div>
-          <div id="windSpeed">Wind</div>
-<div class="clearfix weather-temperature">
-                <img src="" alt="Clear" id="icon" class="float-left" width="60px"/>
-
-
-          </div>
-    
-        </div>
-        </div>
-      </div>
-    </div>
-
-
-
- 
+          <h1 id="city">City</h1>
           
-          -->
-    <br />
-    <br />
-    <div id="future-weather-container">
-      <div id="forecast">
+ <ul>
+              <li>Last updated: <span id="date"></span></li>
+              <li id="description"></li>
+            </ul>
+          
+        </div>
         <div class="row">
-          <div class="col = 5">
-            <div class="card">
-              <div class="cardBodyForecast">
-                <h5 class="cardTitle">Monday</h5>
-                <p class="cardText">73°/51°</p>
-                <p class="cardTextPecip">4%</p>
-                <p class="cardIcon">Icon</p>
-              </div>
+  
+          <div class="col-6">
+            <div class="clearfix weather-temperature">
+             <img src="" alt="Clear" id="icon" class="float-left" />
+              
+                <strong id="temperature">temp</strong><span class="units"> °C</span>
+              
             </div>
           </div>
-          <div class="col = 5">
-            <div class="card">
-              <div class="cardBodyForecast">
-                <h5 class="cardTitle">Tuesday</h5>
-                <p class="cardText">72°/50°</p>
-                <p class="cardTextPecip">4%</p>
-                <p class="cardIcon">Icon</p>
-              </div>
-            </div>
-          </div>
-          <div class="col = 5">
-            <div class="card">
-              <div class="cardBodyForecast">
-                <h5 class="cardTitle">Wednesday</h5>
-                <p class="cardText">69°/51°</p>
-                <p class="cardTextPecip">4%</p>
-                <p class="cardIcon">Icon</p>
-              </div>
-            </div>
-          </div>
-          <div class="col = 5">
-            <div class="card">
-              <div class="cardBodyForecast">
-                <h5 class="cardTitle">Thursday</h5>
-                <p class="cardText">73°/51°</p>
-                <p class="cardTextPecip">4%</p>
-                <p class="cardIcon">Icon</p>
-              </div>
-            </div>
-          </div>
-          <div class="col = 5">
-            <div class="card">
-              <div class="cardBodyForecast">
-                <h5 class="cardTitle">Friday</h5>
-                <p class="cardText">73°/51°</p>
-                <p class="cardTextPecip">4%</p>
-                <p class="cardIcon">Icon</p>
-              </div>
-            </div>
+         
+          <div class="col-6">
+            <ul>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> m/h</li>
+            </ul>
           </div>
         </div>
       </div>
+      
+      <br>
+     
     </div>
-    <br />
-    <br />
-    <small>Open-source code by mcky </small>
+
+     <div id="future-weather-container">
+        <div class="weather-forecast" id="forecast">
+    
+            <div class="row">
+              <div class="col-2">
+                <div class="weather-forecast-date">Thu</div>
+                <img
+                  src="http://openweathermap.org/img/wn/50d@2x.png"
+                  alt=""
+                  width="42"
+                />
+
+                <div class="weather-forecast-temperatures">
+                  <span class="weather-forecast-temperature-max"> 18° </span>
+                  <span class="weather-forecast-temperature-min"> 12° </span>
+
+                  </div>
+
+      </div>
+      </div>
+ 
+    <small>Open-source code by mcky with lots of help from Matt DeLac</small>
 
     <script src="src/script.js"></script>
   </body>
 </html>
+
+  
